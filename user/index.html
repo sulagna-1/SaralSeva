@@ -3,17 +3,85 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="description" content="SaralSeva - Simplified Government Scheme Application Portal for Rural Citizens. Apply for schemes, track applications, and access government services online."/>
+    <meta name="keywords" content="SaralSeva, Gram Panchayat, digital governance, government schemes, rural development, online application, track application, Digital India"> 
+    <meta name="author" content="SaralSeva"/>
+    <meta name="robots" content="index, follow"/>
+    <!--Facebook / open graph -->
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://saralseva.vercel.app/"/>
+    <meta property="og:title" content="SaralSeva - Digitising Governance at Gram Panchayat Level" />
+    <meta property="og:description" content="Simplified Government Scheme Application Portal for Rural Citizens. Apply, track, and access government services online with complete transparency." />
+    <meta property="og:image" content="/favicon/web-app-manifest-512x512.png" />
+    <meta property="og:site_name" content="SaralSeva" />
+    <!--Twitter-->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://saralseva.vercel.app/" />
+    <meta property="twitter:title" content="SaralSeva - Digitising Governance at Gram Panchayat Level" />
+    <meta property="twitter:description" content="Simplified Government Scheme Application Portal for Rural Citizens. Transparent digital governance for Gram Panchayats." />
+    <meta property="twitter:image" content="/favicon/web-app-manifest-512x512.png" />
+    <!--Additional-->
+    <meta name="theme-color" content="#1a5276" />
+    <meta name="msapplication-TileColor" content="#1a5276" />
+    <meta name="application-name" content="SaralSeva" />
+    <meta name="apple-mobile-web-app-title" content="SaralSeva" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    
     <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
     <link rel="shortcut icon" href="/favicon/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
     <meta name="apple-mobile-web-app-title" content="SaralSeva" />
     <link rel="manifest" href="/favicon/site.webmanifest" />
+    <!--Cannonical url-->
+    <link rel="canonical" href="https://saralseva.vercel.app/" />
+
+     <!-- Structured Data / JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "GovernmentService",
+      "name": "SaralSeva",
+      "description": "Simplified Government Scheme Application Portal for Rural Citizens",
+      "url": "https://saralseva.vercel.app/",
+      "provider": {
+        "@type": "Organization",
+        "name": "SaralSeva",
+        "url": "https://saralseva.vercel.app/"
+      },
+      "serviceType": "Government digital services",
+      "areaServed": {
+        "@type": "Country",
+        "name": "India"
+      },
+      "availableChannel": {
+        "@type": "ServiceChannel",
+        "serviceUrl": "https://saralseva.vercel.app/"
+      }
+    }
+    </script>
+     <!-- Preload Critical Resources -->
+    <link rel="preload" href="/src/main.jsx" as="script" />
+    <link rel="preload" href="/favicon/favicon.ico" as="image" />
+    
+    <!-- DNS Prefetch -->
+    <link rel="dns-prefetch" href="https://saralseva.vercel.app/" />
+  </head>
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SaralSeva</title>
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <!-- Noscript fallback -->
+    <noscript>
+      <div style="text-align: center; padding: 50 px; font-family: Arial, sans-serif;">
+        <h1>SaralSeva - Digital Governance Platform</h1>
+        <p>JavaScript is required to run this application. Please enable JavaScript to continue.</p>
+        <p>SaralSeva is a digital initiative to simplify government scheme applications and provide transparent governance at the Gram Panchayat level.</p>
+      </div>
+    </noscript>
+    
   </body>
 </html>
